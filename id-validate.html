@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주민등록번호 검증</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <script defer src="./js/id-validate.js"></script>
+</head>
+
+<body>
+    <h1>주민등록번호 검증 시스템</h1>
+    <div>
+        <input type="text" id="firstPart" pattern="\d{6}" required> -
+        <input type="password" id="secondPart" pattern="\d{7}" required>
+        <button onclick="validateJumin()">검사</button>
+    </div>
+</body>
+
+</html>

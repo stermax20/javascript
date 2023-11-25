@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_msg1</title>
+
+    <link rel="stylesheet" href="./css/my_style.css">
+</head>
+
+<body>
+    <div class="msgbox">
+        <p id="msg"> 경소고 화이팅!</p>
+        <button onclick="msgclose();">
+            닫기
+        </button>
+    </div>
+
+    <button onclick="msgopen();">
+        열기
+    </button>
+
+    <script>
+        function msgopen(msgbox) {
+            document.getElementsByClassName('msgbox')[0].style.display = 'block';
+        }
+
+        function msgclose(msgbox) {
+            document.getElementsByClassName('msgbox')[0].style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
