@@ -119,3 +119,69 @@ function upgradeUser(user) {
         return;
     }
 }
+
+const print = function () {
+    console.log('print');
+};
+print();
+const printAgain = print;
+printAgain();
+
+const sumAgain = sum;
+console.log(sumAgain(1, 3));
+
+function randomQuiz(answer, printYes, printNo) {
+    if (answer === 'thanks you') {
+        printYes;
+    }
+}
+console.log(sumAgain(1, 3));
+
+function randomQuiz(answer, printYes, printNo) {
+    if (answer === 'thanks you') {
+        printYes();
+    } else {
+        printNo;
+    }
+}
+
+const printYes = function () {
+    console.log('Yes!');
+};
+
+const printNo = function print() {
+    console.log('No!');
+};
+
+const simplePrint1 = () => console.log('simplePrint');
+
+simplePrint1();
+
+// const simplePrint = function() {
+//     console.log('simplePrint');
+// };
+
+const simplePrint2 = () => console.log('simplePrint');
+
+simplePrint2();
+
+// const add1 = function (a, b) {
+//     return a + b;
+// };
+
+const add2 = (a, b) => a + b;
+console.log(add2(3, 4));
+
+const simpleMultiply = (a, b) => {
+    return a * b;
+};
+console.log(simpleMultiply(5, 6));
+
+const simpleMultiply2 = (a, b) => {
+    return a * b;
+};
+console.log(simpleMultiply(5, 6));
+
+(function hello() {
+    console.log('hello!...');
+})();
